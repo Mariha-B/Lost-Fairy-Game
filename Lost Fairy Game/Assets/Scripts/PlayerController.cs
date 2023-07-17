@@ -11,6 +11,9 @@ public class PlayerController : MonoBehaviour
 
     private int desiredLane = 1; //0:left 1:Middle 2:Right
     public float laneDistance = 3; //Distance between the lanes
+
+    public float jumpForce;
+    public float gravity = -10;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,7 +24,23 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         direction.z = forwardSpeed;
+       // direction.y = -1;
+       // if the player is grounded, when W key is pressed player jumps.
+       //Else Gravity is on player 
+        if (controller.isGrounded)
 
+        {
+            if (Input.GetKeyDown(KeyCode.W))
+            {
+
+                Jump();
+            }
+            
+        }
+        else
+            {
+                direction.y += gravity * Time.deltaTime;
+            }
         //For these inputs change the position of the player in the lanes.
         if (Input.GetKeyDown(KeyCode.D))
         {
@@ -66,5 +85,11 @@ public class PlayerController : MonoBehaviour
     {
         controller.Move(direction*Time.fixedDeltaTime);
     }
+
+    private void Jump()
+    {
+        direction.y = jumpForce;
+    }
+
 
 }

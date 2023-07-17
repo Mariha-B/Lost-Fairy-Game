@@ -255,6 +255,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   forwardSpeed: 5
   laneDistance: 3
+  jumpForce: 4.69
+  gravity: -20
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
