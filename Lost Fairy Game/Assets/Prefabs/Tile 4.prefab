@@ -125,7 +125,7 @@ GameObject:
   - component: {fileID: 8119823703044430303}
   m_Layer: 0
   m_Name: Obstacles
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -144,6 +144,7 @@ Transform:
   m_Children:
   - {fileID: 8119823703318522450}
   - {fileID: 8119823702793596915}
+  - {fileID: 540370791170058161}
   m_Father: {fileID: 8119823704182133892}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -438,7 +439,6 @@ Transform:
   - {fileID: 8119823704160710556}
   - {fileID: 5598261114249352064}
   - {fileID: 411272528115585751}
-  - {fileID: 540370791170058161}
   - {fileID: 7016512139220624844}
   - {fileID: 8801555746610559493}
   m_Father: {fileID: 0}
@@ -515,11 +515,19 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 8119823704182133892}
+    m_TransformParent: {fileID: 8119823703044430303}
     m_Modifications:
+    - target: {fileID: 681221765494296142, guid: 169df53bc6c86504cb2275cbea3e1e35, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 2635738847403718902, guid: 169df53bc6c86504cb2275cbea3e1e35, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 2809928136178568926, guid: 169df53bc6c86504cb2275cbea3e1e35, type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2809928136178568926, guid: 169df53bc6c86504cb2275cbea3e1e35, type: 3}
       propertyPath: m_LocalScale.x
@@ -535,15 +543,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2809928136178568926, guid: 169df53bc6c86504cb2275cbea3e1e35, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.22
+      value: -135.06992
       objectReference: {fileID: 0}
     - target: {fileID: 2809928136178568926, guid: 169df53bc6c86504cb2275cbea3e1e35, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.68
+      value: 5.739634
       objectReference: {fileID: 0}
     - target: {fileID: 2809928136178568926, guid: 169df53bc6c86504cb2275cbea3e1e35, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -30.93
+      value: -341.92728
       objectReference: {fileID: 0}
     - target: {fileID: 2809928136178568926, guid: 169df53bc6c86504cb2275cbea3e1e35, type: 3}
       propertyPath: m_LocalRotation.w
@@ -551,7 +559,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2809928136178568926, guid: 169df53bc6c86504cb2275cbea3e1e35, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 2809928136178568926, guid: 169df53bc6c86504cb2275cbea3e1e35, type: 3}
       propertyPath: m_LocalRotation.y
@@ -559,7 +567,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2809928136178568926, guid: 169df53bc6c86504cb2275cbea3e1e35, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 2809928136178568926, guid: 169df53bc6c86504cb2275cbea3e1e35, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -576,6 +584,10 @@ PrefabInstance:
     - target: {fileID: 3293554559711761508, guid: 169df53bc6c86504cb2275cbea3e1e35, type: 3}
       propertyPath: m_Name
       value: Log_34
+      objectReference: {fileID: 0}
+    - target: {fileID: 3293554559711761508, guid: 169df53bc6c86504cb2275cbea3e1e35, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 169df53bc6c86504cb2275cbea3e1e35, type: 3}
@@ -677,7 +689,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4056771060359772127, guid: 18e769624b21421478a3c68739b6b2fb, type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4056771060359772127, guid: 18e769624b21421478a3c68739b6b2fb, type: 3}
       propertyPath: m_LocalPosition.x
@@ -801,7 +813,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4107295275950151788, guid: 4d263f1ba670d584ea65d66f05d99d38, type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4107295275950151788, guid: 4d263f1ba670d584ea65d66f05d99d38, type: 3}
       propertyPath: m_LocalScale.x
@@ -1247,6 +1259,10 @@ PrefabInstance:
     - target: {fileID: 6323075980431980821, guid: 9d4375eaf2f118d4bbf88b53e5e29b1f, type: 3}
       propertyPath: m_Name
       value: Rock_49
+      objectReference: {fileID: 0}
+    - target: {fileID: 6323075980431980821, guid: 9d4375eaf2f118d4bbf88b53e5e29b1f, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 6668639963506254767, guid: 9d4375eaf2f118d4bbf88b53e5e29b1f, type: 3}
       propertyPath: m_RootOrder
@@ -2035,6 +2051,10 @@ PrefabInstance:
     - target: {fileID: 7182141807599495786, guid: f2bad699310d4364fb2afe9ceba90073, type: 3}
       propertyPath: m_Name
       value: Rock_74
+      objectReference: {fileID: 0}
+    - target: {fileID: 7182141807599495786, guid: f2bad699310d4364fb2afe9ceba90073, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 7559229609380901072, guid: f2bad699310d4364fb2afe9ceba90073, type: 3}
       propertyPath: m_RootOrder
@@ -2849,6 +2869,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock_24
       objectReference: {fileID: 0}
+    - target: {fileID: 5767239519281457835, guid: 67977e1bcbf7d684da07c2f7651854f0, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 6575969477025722385, guid: 67977e1bcbf7d684da07c2f7651854f0, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -3034,6 +3058,10 @@ PrefabInstance:
     - target: {fileID: 6623629222250712871, guid: f0fb36c0b8bf2534e959c39cf6f5fbb9, type: 3}
       propertyPath: m_Name
       value: Rock_104
+      objectReference: {fileID: 0}
+    - target: {fileID: 6623629222250712871, guid: f0fb36c0b8bf2534e959c39cf6f5fbb9, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f0fb36c0b8bf2534e959c39cf6f5fbb9, type: 3}

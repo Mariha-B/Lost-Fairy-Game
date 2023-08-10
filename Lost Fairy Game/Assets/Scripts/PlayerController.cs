@@ -24,9 +24,9 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         direction.z = forwardSpeed;
-       // direction.y = -1;
-       // if the player is grounded, when W key is pressed player jumps.
-       //Else Gravity is on player 
+        // direction.y = -1;
+        // if the player is grounded, when W key is pressed player jumps.
+        //Else Gravity is on player 
         if (controller.isGrounded)
 
         {
@@ -35,18 +35,18 @@ public class PlayerController : MonoBehaviour
 
                 Jump();
             }
-            
+
         }
         else
-            {
-                direction.y += gravity * Time.deltaTime;
-            }
+        {
+            direction.y += gravity * Time.deltaTime;
+        }
         //For these inputs change the position of the player in the lanes.
         if (Input.GetKeyDown(KeyCode.D))
         {
             desiredLane++;
             //stops player going outside the lane on the right.
-            if(desiredLane==3)
+            if (desiredLane == 3)
             {
                 desiredLane = 2;
             }
@@ -85,18 +85,18 @@ public class PlayerController : MonoBehaviour
         Vector3 diff = targetPosition - transform.position;
         Vector3 moveDir = diff.normalized * 25 * Time.deltaTime;
         if (moveDir.sqrMagnitude < diff.sqrMagnitude)
-        controller.Move(moveDir);
-            else
-            {
-                controller.Move(diff);
-            }
-        
-            
+            controller.Move(moveDir);
+        else
+        {
+            controller.Move(diff);
+        }
+
+
     }
 
     private void FixedUpdate()
     {
-        controller.Move(direction*Time.fixedDeltaTime);
+        controller.Move(direction * Time.fixedDeltaTime);
     }
 
     private void Jump()
@@ -104,5 +104,13 @@ public class PlayerController : MonoBehaviour
         direction.y = jumpForce;
     }
 
+    private void OnControllerColliderHit(ControllerColliderHit hit)
+    {
+        if (hit.transform.tag == "Obstacle")
+        {
+            PlayerManager.gameOver = true;
+        }
+
+    }
 
 }

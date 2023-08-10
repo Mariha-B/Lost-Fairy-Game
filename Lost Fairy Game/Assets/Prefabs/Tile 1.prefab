@@ -176,7 +176,7 @@ GameObject:
   - component: {fileID: 2725825348674284649}
   m_Layer: 0
   m_Name: Cart
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -442,7 +442,7 @@ GameObject:
   - component: {fileID: 2594687114279467571}
   m_Layer: 0
   m_Name: Obstacles
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5911,6 +5911,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 6323075980431980821, guid: 9d4375eaf2f118d4bbf88b53e5e29b1f, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 6668639963506254767, guid: 9d4375eaf2f118d4bbf88b53e5e29b1f, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -6556,6 +6560,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock_74
       objectReference: {fileID: 0}
+    - target: {fileID: 7182141807599495786, guid: f2bad699310d4364fb2afe9ceba90073, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 7559229609380901072, guid: f2bad699310d4364fb2afe9ceba90073, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -6701,6 +6709,10 @@ PrefabInstance:
     - target: {fileID: 1484944617336197601, guid: fe2e91ebba8d691438a2126baa93597f, type: 3}
       propertyPath: m_Layer
       value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1484944617336197601, guid: fe2e91ebba8d691438a2126baa93597f, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 2292409105576594267, guid: fe2e91ebba8d691438a2126baa93597f, type: 3}
       propertyPath: m_RootOrder

@@ -9,9 +9,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5505187832665100046}
+  - component: {fileID: 2092697311594951160}
   m_Layer: 0
   m_Name: Poisonous mushrooms
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -42,6 +43,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &2092697311594951160
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 129231451020155506}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 9.835196, y: 2.4703295, z: 2.929966}
+  m_Center: {x: 0.15854359, y: 0.73516476, z: -0.191288}
 --- !u!1 &646847946766696751
 GameObject:
   m_ObjectHideFlags: 0
@@ -55,7 +69,7 @@ GameObject:
   - component: {fileID: 701926618579831899}
   m_Layer: 0
   m_Name: Bubbles
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4865,6 +4879,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mushroom_3
       objectReference: {fileID: 0}
+    - target: {fileID: 8289513377873647319, guid: 41ed8078104d44b4292c28e2f4fe749f, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 8665370795279748205, guid: 41ed8078104d44b4292c28e2f4fe749f, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -4983,6 +5001,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mushroom_16
       objectReference: {fileID: 0}
+    - target: {fileID: 9019498716578842111, guid: 0ff07d90855a5434e8317bfa7eeaecd2, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0ff07d90855a5434e8317bfa7eeaecd2, type: 3}
 --- !u!4 &8705200062791096146 stripped
@@ -5000,6 +5022,10 @@ PrefabInstance:
     - target: {fileID: 8289513377873647319, guid: e0e2ff0b29ea72d4dbb2ee0eb13d94d5, type: 3}
       propertyPath: m_Name
       value: Mushroom_4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8289513377873647319, guid: e0e2ff0b29ea72d4dbb2ee0eb13d94d5, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 8665370795279748205, guid: e0e2ff0b29ea72d4dbb2ee0eb13d94d5, type: 3}
       propertyPath: m_RootOrder
@@ -5074,6 +5100,10 @@ PrefabInstance:
     - target: {fileID: 8289513377873647319, guid: 41ed8078104d44b4292c28e2f4fe749f, type: 3}
       propertyPath: m_Name
       value: Mushroom_3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8289513377873647319, guid: 41ed8078104d44b4292c28e2f4fe749f, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 8665370795279748205, guid: 41ed8078104d44b4292c28e2f4fe749f, type: 3}
       propertyPath: m_RootOrder
@@ -5193,6 +5223,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mushroom_17
       objectReference: {fileID: 0}
+    - target: {fileID: 9019498716578842111, guid: d82b7a1ec544bea4d9fb6afcf983e75e, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d82b7a1ec544bea4d9fb6afcf983e75e, type: 3}
 --- !u!4 &6732478426582533861 stripped
@@ -5210,6 +5244,10 @@ PrefabInstance:
     - target: {fileID: 2358167250015991947, guid: 195f1ae14c2e99347b4eb41bd185a1d8, type: 3}
       propertyPath: m_Name
       value: Mushroom_39 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2358167250015991947, guid: 195f1ae14c2e99347b4eb41bd185a1d8, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 3166650878163280433, guid: 195f1ae14c2e99347b4eb41bd185a1d8, type: 3}
       propertyPath: m_RootOrder
@@ -5285,6 +5323,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mushroom_40
       objectReference: {fileID: 0}
+    - target: {fileID: 2358167250015991947, guid: f410160e4f45ce140aeb625dcd86b14d, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 3166650878163280433, guid: f410160e4f45ce140aeb625dcd86b14d, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -5359,6 +5401,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mushroom_4
       objectReference: {fileID: 0}
+    - target: {fileID: 8289513377873647319, guid: e0e2ff0b29ea72d4dbb2ee0eb13d94d5, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 8665370795279748205, guid: e0e2ff0b29ea72d4dbb2ee0eb13d94d5, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -5432,6 +5478,10 @@ PrefabInstance:
     - target: {fileID: 2358167250015991947, guid: 195f1ae14c2e99347b4eb41bd185a1d8, type: 3}
       propertyPath: m_Name
       value: Mushroom_39
+      objectReference: {fileID: 0}
+    - target: {fileID: 2358167250015991947, guid: 195f1ae14c2e99347b4eb41bd185a1d8, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 3166650878163280433, guid: 195f1ae14c2e99347b4eb41bd185a1d8, type: 3}
       propertyPath: m_RootOrder
@@ -5550,6 +5600,10 @@ PrefabInstance:
     - target: {fileID: 9019498716578842111, guid: d82b7a1ec544bea4d9fb6afcf983e75e, type: 3}
       propertyPath: m_Name
       value: Mushroom_17
+      objectReference: {fileID: 0}
+    - target: {fileID: 9019498716578842111, guid: d82b7a1ec544bea4d9fb6afcf983e75e, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d82b7a1ec544bea4d9fb6afcf983e75e, type: 3}
