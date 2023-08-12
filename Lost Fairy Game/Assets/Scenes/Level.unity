@@ -324,12 +324,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 26cb72090d736ee419ca869405733357, type: 3}
       propertyPath: m_Name
-      value: Running
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 5866666021909216657, guid: 26cb72090d736ee419ca869405733357, type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: b482443f4b589e0458d5d088dd4cdd3a, type: 2}
+      objectReference: {fileID: 9100000, guid: 0471399e2f7e8ee499f3abb2c1e90698, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 26cb72090d736ee419ca869405733357, type: 3}
 --- !u!1001 &560502741
@@ -474,6 +474,7 @@ GameObject:
   - component: {fileID: 625870650}
   - component: {fileID: 625870652}
   - component: {fileID: 625870651}
+  - component: {fileID: 625870653}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -527,10 +528,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a051785a82af484db0da44e2cefcdd2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  swipeControls: {fileID: 625870653}
   forwardSpeed: 13
   laneDistance: 3
   jumpForce: 14
   gravity: -30
+--- !u!114 &625870653
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 625870646}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 850cdcd624263c746a2c2cb5933a5cd2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tap: 0
+  swipeLeft: 0
+  swipeRight: 0
+  swipeUp: 0
+  swipeDown: 0
+  startTouch: {x: 0, y: 0}
+  swipeDelta: {x: 0, y: 0}
+  isDragging: 0
 --- !u!1 &690855502
 GameObject:
   m_ObjectHideFlags: 0

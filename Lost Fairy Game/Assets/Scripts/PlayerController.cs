@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-
+    public SwipeManager swipeControls;
     private CharacterController controller;
     private Vector3 direction;
     public float forwardSpeed;
@@ -23,6 +23,24 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+       /* if (swipeControls.swipeLeft)
+        {
+            desiredLane--;
+        }
+        if (swipeControls.swipeRight)
+        {
+            desiredLane++;
+        }
+        if(controller.isGrounded)
+        { 
+            if (swipeControls.swipeUp)
+            {
+                Jump();
+            }
+        }*/
+        
+
         direction.z = forwardSpeed;
         // direction.y = -1;
         // if the player is grounded, when W key is pressed player jumps.
@@ -30,7 +48,7 @@ public class PlayerController : MonoBehaviour
         if (controller.isGrounded)
 
         {
-            if (Input.GetKeyDown(KeyCode.W))
+            if (swipeControls.swipeUp)
             {
 
                 Jump();
@@ -42,7 +60,7 @@ public class PlayerController : MonoBehaviour
             direction.y += gravity * Time.deltaTime;
         }
         //For these inputs change the position of the player in the lanes.
-        if (Input.GetKeyDown(KeyCode.D))
+        if (swipeControls.swipeRight)
         {
             desiredLane++;
             //stops player going outside the lane on the right.
@@ -52,7 +70,7 @@ public class PlayerController : MonoBehaviour
             }
         }
 
-        if (Input.GetKeyDown(KeyCode.A))
+        if (swipeControls.swipeLeft)
         {
             desiredLane--;
             //stops player going outside the lane on the left.
