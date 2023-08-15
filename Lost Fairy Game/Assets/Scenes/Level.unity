@@ -536,7 +536,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   swipeControls: {fileID: 625870653}
   player: {fileID: 25385712}
-  forwardSpeed: 13
+  forwardSpeed: 5
+  maxSpeed: 22
   anim: {fileID: 1462598336}
   isGrounded: 0
   laneDistance: 3
@@ -1654,6 +1655,8 @@ MonoBehaviour:
   - {fileID: 8119823704182133895, guid: 2038afd76e9527343ba65f5b7227af04, type: 3}
   - {fileID: 8119823704182133895, guid: 4d075c1cf980edc43838c1b3ff768f4e, type: 3}
   - {fileID: 8119823704182133895, guid: 1ce160ab0b9fb3443af947b2dce3a2ab, type: 3}
+  - {fileID: 8119823704182133895, guid: 2ed98ac736073ad4f854b62dea63513f, type: 3}
+  - {fileID: 8119823704182133895, guid: fad62ec57d4905248827fecc5268c797, type: 3}
   zSpawn: 0
   tileLength: 100
   numberOfTiles: 5

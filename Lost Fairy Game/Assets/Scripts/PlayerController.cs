@@ -7,8 +7,11 @@ public class PlayerController : MonoBehaviour
     public SwipeManager swipeControls;
     private CharacterController controller;
     public GameObject player;
-    private Vector3 move;
+    private Vector3 moveDirection;
+
     public float forwardSpeed;
+    public float maxSpeed;
+
     public Animator anim;
     public bool isGrounded;
 
@@ -26,36 +29,48 @@ public class PlayerController : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
-
+    {   
+        //Move the controller in 'moveDirection' every frame.
+        controller.Move(moveDirection * Time.fixedDeltaTime);
         isGrounded = controller.isGrounded;
 
         if (!PlayerManager.gameStart)
             return;
+        
+        //Idle animation plays when isGame Started parameter is false (default at Start), and running animation plays when true.
         anim.SetBool("isGameStarted", true);
-        move.z = forwardSpeed;
-
+        //Sets the z value of the moveDirection Vector to the forwardSpeed float. Moves Player forward in the z direction at forwardSpeed, speeding up by 0.1 every frame.
+        moveDirection.z = forwardSpeed;
+        if (forwardSpeed < maxSpeed)
+            {
+                forwardSpeed += 0.1f * Time.deltaTime;
+            }
         // if the player is grounded, when W key is pressed player jumps.
         //Else Gravity is on player
 
         anim.SetBool("isGrounded", controller.isGrounded);
 
         if (controller.isGrounded)
-        {   
-            
+        {
+
             if (swipeControls.swipeUp)
             {
 
                 Jump();
-                
+
 
             }
 
         }
         else
         {
-            move.y += gravity * Time.deltaTime;
-            
+            moveDirection.y += gravity * Time.deltaTime;
+
+        }
+
+        if(swipeControls.swipeDown)
+        {
+            StartCoroutine(Slide());
         }
         //For these inputs change the position of the player in the lanes.
         if (swipeControls.swipeRight)
@@ -95,39 +110,23 @@ public class PlayerController : MonoBehaviour
 
         transform.position = Vector3.Lerp(transform.position, targetPosition, 80 * Time.fixedDeltaTime);
         controller.center = controller.center;
-        /*if (transform.position == targetPosition)
-        {
-            return;
-        }
-        Vector3 diff = targetPosition - transform.position;
-        Vector3 moveDir = diff.normalized * 25 * Time.deltaTime;
-        if (moveDir.sqrMagnitude < diff.sqrMagnitude)
-            controller.Move(moveDir);
-        else
-        {
-            controller.Move(diff);
-        }
-        */
-
+       
     }
 
     private void FixedUpdate()
     {
-        if (!PlayerManager.gameStart)
+        /*if (!PlayerManager.gameStart)
             return;
-        controller.Move(move * Time.fixedDeltaTime);
+        controller.Move(moveDirection * Time.fixedDeltaTime);*/
     }
 
     private void Jump()
-    {
-        // move.y += Mathf.Sqrt(jumpForce * -2f * gravity);
-        //move.y += gravity * Time.deltaTime;
-        // controller.Move(move* Time.deltaTime);
-        move.y = jumpForce;
+    {//Player moves in the y direction by jumpForce
+       moveDirection.y = jumpForce;
     }
 
     private void OnControllerColliderHit(ControllerColliderHit hit)
-    {
+    {   //if the player hits somthing tagged 'obstacle' the game is over and the Game Over screen displays
         if (hit.transform.tag == "Obstacle")
         {
             PlayerManager.gameOver = true;
@@ -135,7 +134,15 @@ public class PlayerController : MonoBehaviour
 
     }
 
-    
-
+    private IEnumerator Slide()
+    {
+        anim.SetBool("isSliding", true);
+        controller.center = new Vector3(0, -0.29f, 0);
+        controller.height = 1;
+        yield return new WaitForSeconds(0.5f);
+        controller.center = new Vector3(0, 1.15f, 0);
+        controller.height = 4.3f;
+        anim.SetBool("isSliding", false);
+    }
 
 }
