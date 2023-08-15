@@ -276,7 +276,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8119823704182133895}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.01, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -483,7 +483,7 @@ BoxCollider:
   m_GameObject: {fileID: 5095657774279454648}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1.9335437, y: 1.106262, z: 2.0758247}
   m_Center: {x: -0.10437846, y: 0.053131104, z: 0.047361374}
@@ -643,7 +643,7 @@ BoxCollider:
   m_GameObject: {fileID: 1705208224796071061}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 7.131128, y: 2.0990517, z: 1.6790892}
   m_Center: {x: 1.9308629, y: 0.5477952, z: -0.049981706}
@@ -5410,6 +5410,10 @@ PrefabInstance:
     - target: {fileID: 1416753512564510274, guid: d7c423bb324a5274b892ef4f8003e1c2, type: 3}
       propertyPath: m_TagString
       value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 2092697311594951160, guid: d7c423bb324a5274b892ef4f8003e1c2, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5077170747939657163, guid: d7c423bb324a5274b892ef4f8003e1c2, type: 3}
       propertyPath: m_TagString

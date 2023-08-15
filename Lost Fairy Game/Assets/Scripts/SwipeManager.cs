@@ -88,6 +88,7 @@ public class SwipeManager : MonoBehaviour
                     {
                         swipeUp = true;
                     }
+
             }
             
             

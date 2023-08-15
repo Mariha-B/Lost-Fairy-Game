@@ -6,8 +6,11 @@ public class PlayerController : MonoBehaviour
 {
     public SwipeManager swipeControls;
     private CharacterController controller;
-    private Vector3 direction;
+    public GameObject player;
+    private Vector3 move;
     public float forwardSpeed;
+    public Animator anim;
+    public bool isGrounded;
 
     private int desiredLane = 1; //0:left 1:Middle 2:Right
     public float laneDistance = 3; //Distance between the lanes
@@ -18,46 +21,41 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         controller = GetComponent<CharacterController>();
+       
     }
 
     // Update is called once per frame
     void Update()
     {
 
-       /* if (swipeControls.swipeLeft)
-        {
-            desiredLane--;
-        }
-        if (swipeControls.swipeRight)
-        {
-            desiredLane++;
-        }
-        if(controller.isGrounded)
-        { 
-            if (swipeControls.swipeUp)
-            {
-                Jump();
-            }
-        }*/
-        
+        isGrounded = controller.isGrounded;
 
-        direction.z = forwardSpeed;
-        // direction.y = -1;
+        if (!PlayerManager.gameStart)
+            return;
+        anim.SetBool("isGameStarted", true);
+        move.z = forwardSpeed;
+
         // if the player is grounded, when W key is pressed player jumps.
-        //Else Gravity is on player 
-        if (controller.isGrounded)
+        //Else Gravity is on player
 
-        {
+        anim.SetBool("isGrounded", controller.isGrounded);
+
+        if (controller.isGrounded)
+        {   
+            
             if (swipeControls.swipeUp)
             {
 
                 Jump();
+                
+
             }
 
         }
         else
         {
-            direction.y += gravity * Time.deltaTime;
+            move.y += gravity * Time.deltaTime;
+            
         }
         //For these inputs change the position of the player in the lanes.
         if (swipeControls.swipeRight)
@@ -95,8 +93,9 @@ public class PlayerController : MonoBehaviour
 
         }
 
-        //transform.position = Vector3.Lerp(transform.position, targetPosition, 80 * Time.fixedDeltaTime);
-        if (transform.position == targetPosition)
+        transform.position = Vector3.Lerp(transform.position, targetPosition, 80 * Time.fixedDeltaTime);
+        controller.center = controller.center;
+        /*if (transform.position == targetPosition)
         {
             return;
         }
@@ -108,18 +107,23 @@ public class PlayerController : MonoBehaviour
         {
             controller.Move(diff);
         }
-
+        */
 
     }
 
     private void FixedUpdate()
     {
-        controller.Move(direction * Time.fixedDeltaTime);
+        if (!PlayerManager.gameStart)
+            return;
+        controller.Move(move * Time.fixedDeltaTime);
     }
 
     private void Jump()
     {
-        direction.y = jumpForce;
+        // move.y += Mathf.Sqrt(jumpForce * -2f * gravity);
+        //move.y += gravity * Time.deltaTime;
+        // controller.Move(move* Time.deltaTime);
+        move.y = jumpForce;
     }
 
     private void OnControllerColliderHit(ControllerColliderHit hit)
@@ -130,5 +134,8 @@ public class PlayerController : MonoBehaviour
         }
 
     }
+
+    
+
 
 }

@@ -4378,6 +4378,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Poisonous mushrooms
       objectReference: {fileID: 0}
+    - target: {fileID: 2092697311594951160, guid: d7c423bb324a5274b892ef4f8003e1c2, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5505187832665100046, guid: d7c423bb324a5274b892ef4f8003e1c2, type: 3}
       propertyPath: m_RootOrder
       value: 0

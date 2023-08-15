@@ -2758,7 +2758,7 @@ BoxCollider:
   m_GameObject: {fileID: 7220675241875903538}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 2.0828679, y: 1, z: 4.2913775}
   m_Center: {x: 0.0005513429, y: 0.000000135215, z: -0.62648463}
@@ -2916,7 +2916,7 @@ BoxCollider:
   m_GameObject: {fileID: 1370078662205900773}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 7.5802684, y: 1.298377, z: 3.9575615}
   m_Center: {x: -0.46110827, y: 0.6455815, z: 0.8262625}
@@ -3508,7 +3508,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3771448403352409440, guid: 29e00d63c8e282d41a5236373abda85d, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7498504608423417683, guid: 29e00d63c8e282d41a5236373abda85d, type: 3}
       propertyPath: m_TagString
@@ -3547,7 +3547,7 @@ BoxCollider:
   m_GameObject: {fileID: 8895692388846981774}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 2.1871836, y: 0.5187354, z: 3.2749474}
   m_Center: {x: -0.011921406, y: 2.475208, z: 1.1374741}
@@ -3560,7 +3560,7 @@ BoxCollider:
   m_GameObject: {fileID: 8895692388846981774}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 2.9457605, y: 3.1625242, z: 3.6432793}
   m_Center: {x: 0.055288255, y: 1.0812624, z: -1.2911106}
@@ -3573,7 +3573,7 @@ BoxCollider:
   m_GameObject: {fileID: 8895692388846981774}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 4.0033617, y: 1, z: 3.1792686}
   m_Center: {x: 1.5016813, y: 0, z: -2.373535}
@@ -5806,11 +5806,15 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8119823703044430303}
     m_Modifications:
+    - target: {fileID: 3075029008409552405, guid: 9dafea289b0d92c4896bc6884370c475, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 4807535270557457296, guid: 9dafea289b0d92c4896bc6884370c475, type: 3}
       propertyPath: m_Name
       value: Bridge_1
       objectReference: {fileID: 0}
-    - target: {fileID: 4807535270557457296, guid: 9dafea289b0d92c4896bc6884370c475, type: 3}
+    - target: {fileID: 4854458348133562664, guid: 9dafea289b0d92c4896bc6884370c475, type: 3}
       propertyPath: m_TagString
       value: Obstacle
       objectReference: {fileID: 0}
@@ -5870,6 +5874,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7881454319590865857, guid: 9dafea289b0d92c4896bc6884370c475, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9dafea289b0d92c4896bc6884370c475, type: 3}
 --- !u!1 &3609814837194612473 stripped
@@ -5886,7 +5894,7 @@ BoxCollider:
   m_GameObject: {fileID: 3609814837194612473}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 4.417429, y: 1.3641534, z: 18.025059}
   m_Center: {x: 0.015048027, y: 1.7370613, z: -0.06512833}
