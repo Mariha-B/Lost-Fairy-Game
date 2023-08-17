@@ -131,9 +131,10 @@ public class PlayerController : MonoBehaviour
         {
 
             maxSpeed = 0;
-            forwardSpeed = 0; 
+            forwardSpeed = 0;
             anim.SetBool("isDead", true);
-
+            controller.enabled = false;
+            FindObjectOfType<AudioManager>().PlaySound("Death");
             StartCoroutine(Delay());
             
         }
@@ -143,7 +144,7 @@ public class PlayerController : MonoBehaviour
     }
     private IEnumerator Delay()
     {  
-        yield return new WaitForSeconds(1.7f); 
+        yield return new WaitForSeconds(1.6f); 
         PlayerManager.gameOver = true;
 
     }

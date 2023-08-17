@@ -23,8 +23,8 @@ public class Coins : MonoBehaviour
         {
             
             collision.GetComponent<ScoreManager>().AddScore(coinValue);
+            FindObjectOfType<AudioManager>().PlaySound("Coin");
 
-           
             gameObject.SetActive(false);
         }
     }

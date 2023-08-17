@@ -46,6 +46,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5605232960700365145}
     m_Modifications:
+    - target: {fileID: 646388896496096767, guid: 4b75060a928486d47a149396dede3ca5, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2348068602723714076, guid: 4b75060a928486d47a149396dede3ca5, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -112,6 +116,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5605232960700365145}
     m_Modifications:
+    - target: {fileID: 5494773971304535485, guid: 4be9d39c542a4da42ad21c5e23926d5e, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6256775254750937622, guid: 4be9d39c542a4da42ad21c5e23926d5e, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7039929979924475667, guid: 4be9d39c542a4da42ad21c5e23926d5e, type: 3}
       propertyPath: m_Name
       value: Ruin_29 (5)
@@ -319,6 +331,24 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7708205053868586409, guid: 4be9d39c542a4da42ad21c5e23926d5e, type: 3}
   m_PrefabInstance: {fileID: 4521305320680666691}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &6848915376638810448 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7039929979924475667, guid: 4be9d39c542a4da42ad21c5e23926d5e, type: 3}
+  m_PrefabInstance: {fileID: 4521305320680666691}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &984599934426378875
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6848915376638810448}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  serializedVersion: 2
+  m_Size: {x: 0.9868583, y: 0.11533695, z: 2.7623196}
+  m_Center: {x: 0.24410425, y: 0.06910308, z: 0.4814268}
 --- !u!1001 &5465722429941502360
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -326,6 +356,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5605232960700365145}
     m_Modifications:
+    - target: {fileID: 5494773971304535485, guid: 4be9d39c542a4da42ad21c5e23926d5e, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6256775254750937622, guid: 4be9d39c542a4da42ad21c5e23926d5e, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7039929979924475667, guid: 4be9d39c542a4da42ad21c5e23926d5e, type: 3}
       propertyPath: m_Name
       value: Ruin_29 (1)
@@ -393,6 +431,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7708205053868586409, guid: 4be9d39c542a4da42ad21c5e23926d5e, type: 3}
   m_PrefabInstance: {fileID: 5465722429941502360}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &3055972258318728843 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7039929979924475667, guid: 4be9d39c542a4da42ad21c5e23926d5e, type: 3}
+  m_PrefabInstance: {fileID: 5465722429941502360}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &5705007401773162865
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3055972258318728843}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.7799868, y: 0.5118415, z: 1.7022008}
+  m_Center: {x: 0.11000674, y: 0.20479313, z: -0.48865452}
+--- !u!65 &6515481785027722010
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3055972258318728843}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.7833568, y: 0.20757441, z: 2.6056497}
+  m_Center: {x: 0.108322, y: 0.019407535, z: -0.52203256}
 --- !u!1001 &6019211488772565031
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -474,6 +543,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5605232960700365145}
     m_Modifications:
+    - target: {fileID: 5494773971304535485, guid: 4be9d39c542a4da42ad21c5e23926d5e, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6256775254750937622, guid: 4be9d39c542a4da42ad21c5e23926d5e, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7039929979924475667, guid: 4be9d39c542a4da42ad21c5e23926d5e, type: 3}
       propertyPath: m_Name
       value: Ruin_29 (3)
@@ -548,6 +625,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5605232960700365145}
     m_Modifications:
+    - target: {fileID: 5494773971304535485, guid: 4be9d39c542a4da42ad21c5e23926d5e, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6256775254750937622, guid: 4be9d39c542a4da42ad21c5e23926d5e, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7039929979924475667, guid: 4be9d39c542a4da42ad21c5e23926d5e, type: 3}
       propertyPath: m_Name
       value: Ruin_29 (2)
