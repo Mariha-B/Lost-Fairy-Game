@@ -9,6 +9,7 @@ public class PlayerManager : MonoBehaviour
     public SwipeManager swipeControls;
     public GameObject gameOverPanel;
     public GameObject gameStartPanel;
+    public PlayerController playerController;
     // Start is called before the first frame update
     void Start()
     {
@@ -29,9 +30,20 @@ public class PlayerManager : MonoBehaviour
         if (swipeControls.tap)
         {
             gameStart = true;
-            Destroy(gameStartPanel);
+            gameStartPanel.SetActive(false);
+            //Destroy(gameStartPanel);
         }
 
+
+       
+
+    }
+    private IEnumerator Delay(float dur)
+        {      
+            
+            yield return new WaitForSeconds(dur);
+        Time.timeScale = 0;
+        gameOverPanel.SetActive(true);
 
 
 

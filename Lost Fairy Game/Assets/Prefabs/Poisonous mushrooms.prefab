@@ -4875,6 +4875,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5505187832665100046}
     m_Modifications:
+    - target: {fileID: 6184037170756699023, guid: 41ed8078104d44b4292c28e2f4fe749f, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 7820466250452536065, guid: 41ed8078104d44b4292c28e2f4fe749f, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 8045684979386625310, guid: 41ed8078104d44b4292c28e2f4fe749f, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 8289513377873647319, guid: 41ed8078104d44b4292c28e2f4fe749f, type: 3}
       propertyPath: m_Name
       value: Mushroom_3
@@ -4953,6 +4965,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5505187832665100046}
     m_Modifications:
+    - target: {fileID: 4431197737853559488, guid: 0ff07d90855a5434e8317bfa7eeaecd2, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 7202984682855042392, guid: 0ff07d90855a5434e8317bfa7eeaecd2, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 8529926438641884997, guid: 0ff07d90855a5434e8317bfa7eeaecd2, type: 3}
       propertyPath: m_RootOrder
       value: 10
@@ -5019,6 +5039,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5505187832665100046}
     m_Modifications:
+    - target: {fileID: 6184037170756699023, guid: e0e2ff0b29ea72d4dbb2ee0eb13d94d5, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 7820466250452536065, guid: e0e2ff0b29ea72d4dbb2ee0eb13d94d5, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 8045684979386625310, guid: e0e2ff0b29ea72d4dbb2ee0eb13d94d5, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 8289513377873647319, guid: e0e2ff0b29ea72d4dbb2ee0eb13d94d5, type: 3}
       propertyPath: m_Name
       value: Mushroom_4
@@ -5097,6 +5129,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5505187832665100046}
     m_Modifications:
+    - target: {fileID: 6184037170756699023, guid: 41ed8078104d44b4292c28e2f4fe749f, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 7820466250452536065, guid: 41ed8078104d44b4292c28e2f4fe749f, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 8045684979386625310, guid: 41ed8078104d44b4292c28e2f4fe749f, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 8289513377873647319, guid: 41ed8078104d44b4292c28e2f4fe749f, type: 3}
       propertyPath: m_Name
       value: Mushroom_3
@@ -5175,6 +5219,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5505187832665100046}
     m_Modifications:
+    - target: {fileID: 4431197737853559488, guid: d82b7a1ec544bea4d9fb6afcf983e75e, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 7202984682855042392, guid: d82b7a1ec544bea4d9fb6afcf983e75e, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 8529926438641884997, guid: d82b7a1ec544bea4d9fb6afcf983e75e, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -5305,6 +5357,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3787397577328636863, guid: 195f1ae14c2e99347b4eb41bd185a1d8, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 7169133694240884382, guid: 195f1ae14c2e99347b4eb41bd185a1d8, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 7232115432845065545, guid: 195f1ae14c2e99347b4eb41bd185a1d8, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 195f1ae14c2e99347b4eb41bd185a1d8, type: 3}
 --- !u!4 &1744856553534845383 stripped
@@ -5383,6 +5447,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3787397577328636863, guid: f410160e4f45ce140aeb625dcd86b14d, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 7169133694240884382, guid: f410160e4f45ce140aeb625dcd86b14d, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 7232115432845065545, guid: f410160e4f45ce140aeb625dcd86b14d, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f410160e4f45ce140aeb625dcd86b14d, type: 3}
 --- !u!4 &7132729976391513091 stripped
@@ -5397,6 +5473,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5505187832665100046}
     m_Modifications:
+    - target: {fileID: 6184037170756699023, guid: e0e2ff0b29ea72d4dbb2ee0eb13d94d5, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 7820466250452536065, guid: e0e2ff0b29ea72d4dbb2ee0eb13d94d5, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 8045684979386625310, guid: e0e2ff0b29ea72d4dbb2ee0eb13d94d5, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 8289513377873647319, guid: e0e2ff0b29ea72d4dbb2ee0eb13d94d5, type: 3}
       propertyPath: m_Name
       value: Mushroom_4
@@ -5539,6 +5627,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3787397577328636863, guid: 195f1ae14c2e99347b4eb41bd185a1d8, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 7169133694240884382, guid: 195f1ae14c2e99347b4eb41bd185a1d8, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 7232115432845065545, guid: 195f1ae14c2e99347b4eb41bd185a1d8, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 195f1ae14c2e99347b4eb41bd185a1d8, type: 3}
 --- !u!4 &5566004153777573745 stripped
@@ -5553,6 +5653,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5505187832665100046}
     m_Modifications:
+    - target: {fileID: 4431197737853559488, guid: d82b7a1ec544bea4d9fb6afcf983e75e, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 7202984682855042392, guid: d82b7a1ec544bea4d9fb6afcf983e75e, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 8529926438641884997, guid: d82b7a1ec544bea4d9fb6afcf983e75e, type: 3}
       propertyPath: m_RootOrder
       value: 2

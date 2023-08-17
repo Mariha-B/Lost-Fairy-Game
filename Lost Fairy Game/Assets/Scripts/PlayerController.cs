@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     public SwipeManager swipeControls;
-    private CharacterController controller;
+    public CharacterController controller;
     public GameObject player;
     private Vector3 moveDirection;
 
@@ -129,17 +129,30 @@ public class PlayerController : MonoBehaviour
     {   //if the player hits somthing tagged 'obstacle' the game is over and the Game Over screen displays
         if (hit.transform.tag == "Obstacle")
         {
-            PlayerManager.gameOver = true;
+
+            maxSpeed = 0;
+            forwardSpeed = 0; 
+            anim.SetBool("isDead", true);
+
+            StartCoroutine(Delay());
+            
         }
 
-    }
 
+       
+    }
+    private IEnumerator Delay()
+    {  
+        yield return new WaitForSeconds(1.7f); 
+        PlayerManager.gameOver = true;
+
+    }
     private IEnumerator Slide()
     {
         anim.SetBool("isSliding", true);
         controller.center = new Vector3(0, -0.29f, 0);
         controller.height = 1;
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(1f);
         controller.center = new Vector3(0, 1.15f, 0);
         controller.height = 4.3f;
         anim.SetBool("isSliding", false);
