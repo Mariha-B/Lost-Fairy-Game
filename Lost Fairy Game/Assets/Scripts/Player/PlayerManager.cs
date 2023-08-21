@@ -26,26 +26,22 @@ public class PlayerManager : MonoBehaviour
             Time.timeScale = 0;
             gameOverPanel.SetActive(true);
         }
-
+        else
+        {
+            Time.timeScale = 1;
+            gameOverPanel.SetActive(false);
+        }
         if (swipeControls.tap)
         {
+            
             gameStart = true;
-            gameStartPanel.SetActive(false);
-            //Destroy(gameStartPanel);
+            //gameStartPanel.SetActive(false);
+            Destroy(gameStartPanel);
         }
 
 
        
 
     }
-    private IEnumerator Delay(float dur)
-        {      
-            
-            yield return new WaitForSeconds(dur);
-        Time.timeScale = 0;
-        gameOverPanel.SetActive(true);
-
-
-
-    }
+    
 }

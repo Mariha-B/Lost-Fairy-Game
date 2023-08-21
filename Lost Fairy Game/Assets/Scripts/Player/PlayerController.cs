@@ -108,9 +108,30 @@ public class PlayerController : MonoBehaviour
 
         }
 
-        transform.position = Vector3.Lerp(transform.position, targetPosition, 80 * Time.fixedDeltaTime);
-        controller.center = controller.center;
-       
+        // Check if the current position is not yet at the target position
+        if (transform.position != targetPosition)
+        {
+            // Calculate the vector pointing from current position to target position
+            Vector3 diff = targetPosition - transform.position;
+
+            // Calculate a normalized movement direction vector
+            Vector3 moveDir = diff.normalized * 30 * Time.deltaTime;
+
+            // Check if the squared magnitude of the movement direction is smaller than
+            // the magnitude of the difference vector (distance to target)
+            if (moveDir.sqrMagnitude < diff.magnitude)
+            {
+                // Move the object smoothly using the controller's Move method
+                controller.Move(moveDir);
+            }
+            else
+            {
+                // If the object is very close to the target, move it directly to the target
+                controller.Move(diff);
+            }
+            controller.Move(moveDirection * Time.deltaTime);
+        }
+
     }
 
     private void FixedUpdate()
@@ -137,10 +158,11 @@ public class PlayerController : MonoBehaviour
             FindObjectOfType<AudioManager>().PlaySound("Death");
             StartCoroutine(Delay());
             
+
         }
 
 
-       
+
     }
     private IEnumerator Delay()
     {  

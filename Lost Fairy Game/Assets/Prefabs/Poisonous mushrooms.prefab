@@ -5293,6 +5293,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5505187832665100046}
     m_Modifications:
+    - target: {fileID: 775691880188741149, guid: 195f1ae14c2e99347b4eb41bd185a1d8, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2358167250015991947, guid: 195f1ae14c2e99347b4eb41bd185a1d8, type: 3}
       propertyPath: m_Name
       value: Mushroom_39 (1)
@@ -5361,6 +5365,14 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Obstacle
       objectReference: {fileID: 0}
+    - target: {fileID: 4213358521526351494, guid: 195f1ae14c2e99347b4eb41bd185a1d8, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4675029314312862913, guid: 195f1ae14c2e99347b4eb41bd185a1d8, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7169133694240884382, guid: 195f1ae14c2e99347b4eb41bd185a1d8, type: 3}
       propertyPath: m_TagString
       value: Obstacle
@@ -5383,6 +5395,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5505187832665100046}
     m_Modifications:
+    - target: {fileID: 775691880188741149, guid: f410160e4f45ce140aeb625dcd86b14d, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2358167250015991947, guid: f410160e4f45ce140aeb625dcd86b14d, type: 3}
       propertyPath: m_Name
       value: Mushroom_40
@@ -5450,6 +5466,14 @@ PrefabInstance:
     - target: {fileID: 3787397577328636863, guid: f410160e4f45ce140aeb625dcd86b14d, type: 3}
       propertyPath: m_TagString
       value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 4213358521526351494, guid: f410160e4f45ce140aeb625dcd86b14d, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4675029314312862913, guid: f410160e4f45ce140aeb625dcd86b14d, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7169133694240884382, guid: f410160e4f45ce140aeb625dcd86b14d, type: 3}
       propertyPath: m_TagString
@@ -5563,6 +5587,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5505187832665100046}
     m_Modifications:
+    - target: {fileID: 775691880188741149, guid: 195f1ae14c2e99347b4eb41bd185a1d8, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2358167250015991947, guid: 195f1ae14c2e99347b4eb41bd185a1d8, type: 3}
       propertyPath: m_Name
       value: Mushroom_39
@@ -5630,6 +5658,14 @@ PrefabInstance:
     - target: {fileID: 3787397577328636863, guid: 195f1ae14c2e99347b4eb41bd185a1d8, type: 3}
       propertyPath: m_TagString
       value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 4213358521526351494, guid: 195f1ae14c2e99347b4eb41bd185a1d8, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4675029314312862913, guid: 195f1ae14c2e99347b4eb41bd185a1d8, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7169133694240884382, guid: 195f1ae14c2e99347b4eb41bd185a1d8, type: 3}
       propertyPath: m_TagString

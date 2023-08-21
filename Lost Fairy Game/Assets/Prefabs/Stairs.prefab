@@ -48,7 +48,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 646388896496096767, guid: 4b75060a928486d47a149396dede3ca5, type: 3}
       propertyPath: m_Convex
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2348068602723714076, guid: 4b75060a928486d47a149396dede3ca5, type: 3}
       propertyPath: m_RootOrder
@@ -268,6 +268,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ruin_29
       objectReference: {fileID: 0}
+    - target: {fileID: 7039929979924475667, guid: 4be9d39c542a4da42ad21c5e23926d5e, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 7708205053868586409, guid: 4be9d39c542a4da42ad21c5e23926d5e, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -345,10 +349,23 @@ BoxCollider:
   m_GameObject: {fileID: 6848915376638810448}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.9868583, y: 0.11533695, z: 2.7623196}
-  m_Center: {x: 0.24410425, y: 0.06910308, z: 0.4814268}
+  m_Size: {x: 0.028575897, y: 0.20332824, z: 2.6818402}
+  m_Center: {x: 0.782578, y: 0.11309872, z: 0.49291357}
+--- !u!65 &7858644775443498362
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6848915376638810448}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.028575897, y: 0.20332824, z: 2.6818402}
+  m_Center: {x: -0.27, y: 0.11309872, z: 0.49291357}
 --- !u!1001 &5465722429941502360
 PrefabInstance:
   m_ObjectHideFlags: 0
