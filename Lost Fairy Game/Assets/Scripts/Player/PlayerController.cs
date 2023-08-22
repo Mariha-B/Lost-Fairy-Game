@@ -115,7 +115,7 @@ public class PlayerController : MonoBehaviour
             Vector3 diff = targetPosition - transform.position;
 
             // Calculate a normalized movement direction vector
-            Vector3 moveDir = diff.normalized * 30 * Time.deltaTime;
+            Vector3 moveDir = diff.normalized * 50 * Time.deltaTime;
 
             // Check if the squared magnitude of the movement direction is smaller than
             // the magnitude of the difference vector (distance to target)
